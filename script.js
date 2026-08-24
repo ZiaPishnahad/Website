@@ -39,7 +39,7 @@ const translations = {
       description:
         "Precision-focused instrumentation expertise covering calibration, loop checking, installation, commissioning, operation, procurement, and equipment trading.",
       primary: "Contact Me",
-      secondary: "Explore Expertise",
+      secondary: "Download Resume",
       signature: "Precision • Measurement • Control • Reliability",
       scroll: "Scroll to explore"
     },
