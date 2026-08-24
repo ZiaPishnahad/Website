@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Instrumentation Engineer — Zia Pishnahad">
+  <meta name="theme-color" content="#16A34A">
+  <title>Zia Pishnahad | Professional Instrumentation Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Zia Pishnahad home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="14"></circle>
+            <circle cx="20" cy="20" r="5"></circle>
+            <path d="M20 2V10M20 30V38M2 20H10M30 20H38"></path>
+            <path d="M8 8L13.5 13.5M26.5 26.5L32 32M32 8L26.5 13.5M13.5 26.5L8 32"></path>
+          </svg>
+        </span>
+        <span class="brand-name">Zia Pishnahad</span>
+      </a>
+
+      <div class="desktop-nav" id="desktopNav">
+        <a href="#home" class="nav-link active" data-nav="home" data-i18n="nav.home">Home</a>
+        <a href="#about" class="nav-link" data-nav="about" data-i18n="nav.about">About</a>
+        <a href="#expertise" class="nav-link" data-nav="expertise" data-i18n="nav.expertise">Expertise</a>
+        <a href="#contact" class="nav-link" data-nav="contact" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <div class="language-switcher" role="group" aria-label="Language selector">
+          <button type="button" class="language-button active" data-language="en">EN</button>
+          <button type="button" class="language-button" data-language="fa">فا</button>
+          <button type="button" class="language-button" data-language="ar">ع</button>
+        </div>
+
+        <button
+          type="button"
+          class="icon-button theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+        >
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2V4M12 20V22M4.93 4.93L6.34 6.34M17.66 17.66L19.07 19.07M2 12H4M20 12H22M4.93 19.07L6.34 17.66M17.66 6.34L19.07 4.93"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M20.5 14.7A8.5 8.5 0 0 1 9.3 3.5 8.5 8.5 0 1 0 20.5 14.7Z"></path>
+          </svg>
+        </button>
+
+        <div class="theme-picker-wrapper">
+          <button
+            type="button"
+            class="icon-button"
+            id="themePickerButton"
+            aria-label="Choose color theme"
+            aria-expanded="false"
+          >
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="8"></circle>
+              <circle cx="9" cy="9" r="1.2"></circle>
+              <circle cx="15" cy="8" r="1.2"></circle>
+              <circle cx="16" cy="14" r="1.2"></circle>
+              <path d="M12 20C9.8 20 9 18.7 9 17.3C9 15.7 10.2 15 12 15H14.2C16.1 15 17 13.8 17 12"></path>
+            </svg>
+          </button>
+
+          <div class="theme-picker" id="themePicker" aria-hidden="true">
+            <button type="button" data-color-theme="emerald">
+              <span class="theme-dot emerald"></span>
+              <span data-i18n="themes.emerald">Emerald</span>
+            </button>
+            <button type="button" data-color-theme="aqua">
+              <span class="theme-dot aqua"></span>
+              <span data-i18n="themes.aqua">Aqua</span>
+            </button>
+            <button type="button" data-color-theme="forest">
+              <span class="theme-dot forest"></span>
+              <span data-i18n="themes.forest">Forest</span>
+            </button>
+            <button type="button" data-color-theme="mint">
+              <span class="theme-dot mint"></span>
+              <span data-i18n="themes.mint">Mint</span>
+            </button>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="mobile-menu-button"
+          id="mobileMenuButton"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#home" class="mobile-nav-link active" data-nav="home" data-i18n="nav.home">Home</a>
+      <a href="#about" class="mobile-nav-link" data-nav="about" data-i18n="nav.about">About</a>
+      <a href="#expertise" class="mobile-nav-link" data-nav="expertise" data-i18n="nav.expertise">Expertise</a>
+      <a href="#contact" class="mobile-nav-link" data-nav="contact" data-i18n="nav.contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid container">
+        <div class="hero-content reveal">
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span>
+            <span data-i18n="hero.eyebrow">INSTRUMENTATION ENGINEERING</span>
+          </div>
+
+          <h1 data-i18n="hero.title">Professional Instrumentation Engineer</h1>
+
+          <p class="hero-description" data-i18n="hero.description">
+            Precision-focused instrumentation expertise covering calibration, loop checking, installation, commissioning, operation, procurement, and equipment trading.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="button button-primary">
+              <span data-i18n="hero.primary">Contact Me</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12H19M13 6L19 12L13 18"></path>
+              </svg>
+            </a>
+
+            <a href="Rezome (2).pdf" download class="button button-secondary">
+              <span data-i18n="hero.secondary">Download Resume</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 5V19M6 13L12 19L18 13"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-signature">
+            <span class="signature-line"></span>
+            <span data-i18n="hero.signature">Precision • Measurement • Control • Reliability</span>
+          </div>
+        </div>
+
+        <div class="instrument-visual reveal" aria-hidden="true">
+          <div class="visual-grid"></div>
+          <div class="visual-ring ring-one"></div>
+          <div class="visual-ring ring-two"></div>
+          <div class="visual-ring ring-three"></div>
+
+          <div class="measurement-axis axis-horizontal">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+          <div class="measurement-axis axis-vertical">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+          <div class="sensor-core">
+            <div class="core-inner">
+              <svg viewBox="0 0 100 100" fill="none">
+                <circle cx="50" cy="50" r="36"></circle>
+                <circle cx="50" cy="50" r="17"></circle>
+                <path d="M50 14V30M50 70V86M14 50H30M70 50H86"></path>
+                <path d="M25 25L36 36M64 64L75 75M75 25L64 36M36 64L25 75"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="signal signal-one">
+            <span class="node"></span>
+            <span class="signal-path"></span>
+            <span class="node"></span>
+          </div>
+
+          <div class="signal signal-two">
+            <span class="node"></span>
+            <span class="signal-path"></span>
+            <span class="node"></span>
+          </div>
+
+          <div class="visual-label label-top">
+            <span>CAL</span>
+            <strong>01</strong>
+          </div>
+
+          <div class="visual-label label-bottom">
+            <span>LOOP</span>
+            <strong>CHECK</strong>
+          </div>
+
+          <div class="visual-status">
+            <span class="status-dot"></span>
+            <span data-i18n="visual.precision">PRECISION SYSTEM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom container">
+        <div class="scroll-indicator">
+          <span class="scroll-line"></span>
+          <span data-i18n="hero.scroll">Scroll to explore</span>
+        </div>
+        <span class="hero-number">01 / 04</span>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">02</span>
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span>
+              <span data-i18n="about.eyebrow">PROFESSIONAL IDENTITY</span>
+            </div>
+            <h2 data-i18n="about.title">Built around precision.</h2>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-main reveal">
+            <p class="about-lead" data-i18n="about.lead">
+              Zia Pishnahad is a Professional Instrumentation Engineer focused on practical, accurate, and reliable instrumentation work.
+            </p>
+
+            <p class="about-text" data-i18n="about.text">
+              The professional scope covers instrumentation calibration, loop checking, installation, commissioning, operation, procurement, and equipment trading — with an emphasis on dependable measurement and technically sound execution.
+            </p>
+          </div>
+
+          <div class="about-side reveal">
+            <div class="identity-card">
+              <span class="identity-label" data-i18n="about.identityLabel">PROFESSIONAL</span>
+              <strong>Zia Pishnahad</strong>
+              <span data-i18n="about.identityTitle">Instrumentation Engineer</span>
+            </div>
+
+            <div class="descriptor-list">
+              <span data-i18n="tags.instrumentation">Instrumentation</span>
+              <span data-i18n="tags.calibration">Calibration</span>
+              <span data-i18n="tags.commissioning">Commissioning</span>
+              <span data-i18n="tags.control">Control</span>
+              <span data-i18n="tags.precision">Precision</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section expertise-section" id="expertise">
+      <div class="container">
+        <div class="section-heading section-heading-split reveal">
+          <div>
+            <span class="section-index">03</span>
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span>
+              <span data-i18n="expertise.eyebrow">TECHNICAL CAPABILITIES</span>
+            </div>
+            <h2 data-i18n="expertise.title">Professional Expertise</h2>
+          </div>
+
+          <p data-i18n="expertise.intro">
+            Focused instrumentation capabilities from field installation and verification to equipment procurement and trading.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card reveal">
+            <div class="card-number">01</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <circle cx="24" cy="24" r="15"></circle>
+                <circle cx="24" cy="24" r="5"></circle>
+                <path d="M24 4V11M24 37V44M4 24H11M37 24H44"></path>
+                <path d="M10 10L15 15M33 33L38 38M38 10L33 15M15 33L10 38"></path>
+              </svg>
+            </div>
+            <h3 data-i18n="expertise.cards.calibration.title">Calibration</h3>
+            <p data-i18n="expertise.cards.calibration.text">Calibration of instrumentation equipment with focus on accuracy and reliable measurement.</p>
+            <span class="card-arrow">↗</span>
+          </article>
+
+          <article class="expertise-card reveal">
+            <div class="card-number">02</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <path d="M4 28H12L16 16L22 35L27 22L31 28H44"></path>
+                <circle cx="12" cy="28" r="2.5"></circle>
+                <circle cx="44" cy="28" r="2.5"></circle>
+              </svg>
+            </div>
+            <h3 data-i18n="expertise.cards.loop.title">Loop Check</h3>
+            <p data-i18n="expertise.cards.loop.text">Checking instrumentation loops and verifying correct signal transmission and functionality.</p>
+            <span class="card-arrow">↗</span>
+          </article>
+
+          <article class="expertise-card reveal">
+            <div class="card-number">03</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <path d="M15 39V9M33 39V9"></path>
+                <path d="M9 15H39M9 33H39"></path>
+                <circle cx="24" cy="24" r="6"></circle>
+                <path d="M24 18V12M30 24H36"></path>
+              </svg>
+            </div>
+            <h3 data-i18n="expertise.cards.installation.title">Installation</h3>
+            <p data-i18n="expertise.cards.installation.text">Installation and integration of instrumentation equipment.</p>
+            <span class="card-arrow">↗</span>
+          </article>
+
+          <article class="expertise-card reveal">
+            <div class="card-number">04</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <path d="M8 34L19 23L27 31L40 18"></path>
+                <path d="M31 18H40V27"></path>
+                <circle cx="8" cy="34" r="3"></circle>
+                <circle cx="19" cy="23" r="3"></circle>
+                <circle cx="27" cy="31" r="3"></circle>
+              </svg>
+            </div>
+            <h3 data-i18n="expertise.cards.commissioning.title">Commissioning</h3>
+            <p data-i18n="expertise.cards.commissioning.text">Commissioning instrumentation systems and preparing equipment for operation.</p>
+            <span class="card-arrow">↗</span>
+          </article>
+
+          <article class="expertise-card reveal">
+            <div class="card-number">05</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <circle cx="24" cy="24" r="15"></circle>
+                <path d="M24 9V24L34 31"></path>
+                <path d="M8 24H4M44 24H40"></path>
+              </svg>
+            </div>
+            <h3 data-i18n="expertise.cards.operation.title">Operation</h3>
+            <p data-i18n="expertise.cards.operation.text">Instrumentation operation and practical technical support.</p>
+            <span class="card-arrow">↗</span>
+          </article>
+
+          <article class="expertise-card reveal">
+            <div class="card-number">06</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <rect x="8" y="13" width="32" height="25" rx="3"></rect>
+                <path d="M15 13V9H33V13M17 21H31M17 28H26"></path>
+                <circle cx="34" cy="29" r="4"></circle>
+              </svg>
+            </div>
+            <h3 data-i18n="expertise.cards.trading.title">Equipment Trading</h3>
+            <p data-i18n="expertise.cards.trading.text">Buying and selling instrumentation equipment.</p>
+            <span class="card-arrow">↗</span>
+          </article>
+
+          <article class="expertise-card reveal">
+            <div class="card-number">07</div>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <path d="M8 12H40M8 24H40M8 36H40"></path>
+                <circle cx="15" cy="12" r="3"></circle>
+                <circle cx="32" cy="24" r="3"></circle>
+                <circle cx="21" cy="36" r="3"></circle>
+              </svg>
+            </div>
+            <h3 data-i18n="expertise.cards.procurement.title">Procurement</h3>
+            <p data-i18n="expertise.cards.procurement.text">Professional sourcing and purchasing of instrumentation equipment.</p>
+            <span class="card-arrow">↗</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-shell reveal">
+          <div class="contact-intro">
+            <span class="section-index">04</span>
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span>
+              <span data-i18n="contact.eyebrow">GET IN TOUCH</span>
+            </div>
+
+            <h2 data-i18n="contact.title">Let's connect.</h2>
+
+            <p data-i18n="contact.description">
+              For instrumentation expertise, equipment support, or professional inquiries, feel free to get in touch.
+            </p>
+          </div>
+
+          <div class="contact-options">
+            <article class="contact-card">
+              <div class="contact-card-icon whatsapp-icon">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <path d="M24 8C15.16 8 8 14.72 8 23C8 27.01 9.72 30.68 12.52 33.37L10.5 40L17.45 37.91C19.45 38.9 21.66 39.45 24 39.45C32.84 39.45 40 32.73 40 24.45C40 16.17 32.84 8 24 8Z"></path>
+                  <path d="M18.5 17.5C19.2 17 20.1 17.25 20.45 18.05L21.6 20.7C21.85 21.28 21.7 21.95 21.25 22.35L20 23.45C21.1 25.65 22.9 27.35 25.1 28.35L26.2 27.15C26.65 26.65 27.35 26.55 27.9 26.85L30.5 28.1C31.25 28.45 31.5 29.35 31 30C30.25 31 29.05 31.75 27.7 31.6C21.4 30.9 16.1 25.65 15.4 19.3C15.25 18 16.2 17 18.5 17.5Z"></path>
+                </svg>
+              </div>
+
+              <div class="contact-card-content">
+                <span class="contact-label" data-i18n="contact.whatsapp.label">WHATSAPP CHANNEL</span>
+                <h3 data-i18n="contact.whatsapp.title">Stay connected</h3>
+                <p data-i18n="contact.whatsapp.text">Follow the WhatsApp Channel for professional contact and updates.</p>
+
+                <a
+                  href="YOUR_WHATSAPP_CHANNEL_URL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link"
+                  data-i18n="contact.whatsapp.button"
+                >
+                  Visit WhatsApp Channel
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12H19M13 6L19 12L13 18"></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="contact-card email-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <rect x="7" y="11" width="34" height="26" rx="4"></rect>
+                  <path d="M9 15L24 27L39 15"></path>
+                </svg>
+              </div>
+
+              <div class="contact-card-content">
+                <span class="contact-label" data-i18n="contact.email.label">EMAIL</span>
+                <h3>ziapishnahad@gmail.com</h3>
+                <p data-i18n="contact.email.text">For direct professional inquiries, send an email or copy the address.</p>
+
+                <div class="email-actions">
+                  <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=ziapishnahad@gmail.com" class="contact-link">
+                    <span data-i18n="contact.email.send">Send Email</span>
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M4 4H20V20H4V4Z"></path>
+                      <path d="M4 5L12 12L20 5"></path>
+                    </svg>
+                  </a>
+
+                  <button type="button" class="copy-button" id="copyEmailButton">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <rect x="8" y="8" width="11" height="11" rx="2"></rect>
+                      <path d="M16 8V6C16 4.9 15.1 4 14 4H6C4.9 4 4 4.9 4 6V14C4 15.1 4.9 16 6 16H8"></path>
+                    </svg>
+                    <span data-i18n="contact.email.copy">Copy Email</span>
+                  </button>
+                </div>
+
+                <span class="copy-status" id="copyStatus" role="status" aria-live="polite"></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="currentYear"></span> Zia Pishnahad</span>
+      <span data-i18n="footer.title">Professional Instrumentation Engineer</span>
+    </div>
+  </footer>
+
+  <button
+    type="button"
+    class="back-to-top"
+    id="backToTop"
+    aria-label="Back to top"
+  >
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 19V5M6 11L12 5L18 11"></path>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
