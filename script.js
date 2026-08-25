@@ -136,7 +136,7 @@ const translations = {
     },
 
     footer: {
-      title: "Professional Instrumentation Engineer"
+      title: "Phone Num. : 09155185653"
     },
 
     themes: {
@@ -271,7 +271,7 @@ const translations = {
     },
 
     footer: {
-      title: "مهندس حرفه‌ای ابزار دقیق"
+      title: "شماره تماس : 09155185653"
     },
 
     themes: {
@@ -406,7 +406,7 @@ const translations = {
     },
 
     footer: {
-      title: "مهندس أجهزة وقياس محترف"
+      title: "رقم الاتصال : 09155185653"
     },
 
     themes: {
