@@ -535,6 +535,33 @@ html[dir="rtl"] .eyebrow {
   background: currentColor;
 }
 
+.youtube-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.youtube-icon rect {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+}
+
+.youtube-icon path {
+  fill: currentColor;
+  stroke: none;
+}
+
+.youtube-card {
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.youtube-card:hover {
+  transform: translateY(-4px);
+}
+
 .hero h1 {
   max-width: 760px;
   margin: 0;
