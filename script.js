@@ -406,6 +406,12 @@ const translations = {
         button: "زيارة قناة واتساب"
       },
 
+       // العربية
+      "contact.youtube.label": "قناة يوتيوب",
+      "contact.youtube.title": "شاهد وتابع",
+      "contact.youtube.text": "تابع قناة يوتيوب لمشاهدة المحتوى المتخصص والتحديثات ومقاطع الفيديو.",
+      "contact.youtube.button": "زيارة قناة يوتيوب",
+
       email: {
         label: "البريد الإلكتروني",
         text:
