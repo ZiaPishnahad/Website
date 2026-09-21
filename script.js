@@ -126,6 +126,11 @@ const translations = {
         button: "Visit WhatsApp Channel"
       },
 
+      "contact.youtube.label": "YOUTUBE CHANNEL",
+      "contact.youtube.title": "Watch & Follow",
+      "contact.youtube.text": "Follow the YouTube channel for professional content, updates, and videos.",
+      "contact.youtube.button": "Visit YouTube Channel",
+
       email: {
         label: "EMAIL",
         text:
@@ -260,6 +265,11 @@ const translations = {
           "برای ارتباط حرفه‌ای و دریافت به‌روزرسانی‌ها، کانال واتساپ را دنبال کنید.",
         button: "مشاهده کانال واتساپ"
       },
+
+      "contact.youtube.label": "کانال یوتیوب",
+      "contact.youtube.title": "تماشا و دنبال کنید",
+      "contact.youtube.text": "برای مشاهده ویدیوها، محتوای تخصصی و آخرین به‌روزرسانی‌ها، کانال یوتیوب را دنبال کنید.",
+      "contact.youtube.button": "مشاهده کانال یوتیوب",
 
       email: {
         label: "ایمیل",
