@@ -126,10 +126,12 @@ const translations = {
         button: "Visit WhatsApp Channel"
       },
 
-      "contact.youtube.label": "YOUTUBE CHANNEL",
-      "contact.youtube.title": "Watch & Follow",
-      "contact.youtube.text": "Follow the YouTube channel for professional content, updates, and videos.",
-      "contact.youtube.button": "Visit YouTube Channel",
+      youtube: {
+  label: "YOUTUBE CHANNEL",
+  title: "Watch & Follow",
+  text: "Follow the YouTube channel for professional content, updates, and videos.",
+  button: "Visit YouTube Channel"
+},
 
       email: {
         label: "EMAIL",
@@ -266,10 +268,12 @@ const translations = {
         button: "مشاهده کانال واتساپ"
       },
 
-      "contact.youtube.label": "کانال یوتیوب",
-      "contact.youtube.title": "تماشا و دنبال کنید",
-      "contact.youtube.text": "برای مشاهده ویدیوها، محتوای تخصصی و آخرین به‌روزرسانی‌ها، کانال یوتیوب را دنبال کنید.",
-      "contact.youtube.button": "مشاهده کانال یوتیوب",
+      youtube: {
+  label: "کانال یوتیوب",
+  title: "تماشا و دنبال کنید",
+  text: "برای مشاهده ویدیوها، محتوای تخصصی و آخرین به‌روزرسانی‌ها، کانال یوتیوب را دنبال کنید.",
+  button: "مشاهده کانال یوتیوب"
+},
 
       email: {
         label: "ایمیل",
@@ -406,11 +410,12 @@ const translations = {
         button: "زيارة قناة واتساب"
       },
 
-       // العربية
-      "contact.youtube.label": "قناة يوتيوب",
-      "contact.youtube.title": "شاهد وتابع",
-      "contact.youtube.text": "تابع قناة يوتيوب لمشاهدة المحتوى المتخصص والتحديثات ومقاطع الفيديو.",
-      "contact.youtube.button": "زيارة قناة يوتيوب",
+       youtube: {
+  label: "قناة يوتيوب",
+  title: "شاهد وتابع",
+  text: "تابع قناة يوتيوب لمشاهدة المحتوى المتخصص والتحديثات ومقاطع الفيديو.",
+  button: "زيارة قناة يوتيوب"
+},
 
       email: {
         label: "البريد الإلكتروني",
